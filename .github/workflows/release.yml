@@ -1,15 +1,8 @@
 name: Build and release
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - '**.rs'
-      - 'Cargo.lock'
-      - 'Cargo.toml'
-    tags-ignore:
-      - dev-build
+  workflow_dispatch:
+  workflow_call:
 
 env:
   dev_tag: dev-build
