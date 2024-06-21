@@ -1,17 +1,7 @@
 name: Continuous Integration
 on:
-  push:
-    paths:
-      - "**.rs"
-      - "Cargo.lock"
-      - "Cargo.toml"
-      - "**.json"
-  pull_request:
-    paths:
-      - "**.rs"
-      - "Cargo.lock"
-      - "Cargo.toml"
-      - "**.json"
+  workflow_dispatch:
+  workflow_call:
 
 jobs:
   lint:
